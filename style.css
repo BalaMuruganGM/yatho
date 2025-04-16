@@ -30,7 +30,7 @@
 .home{
     width: 100%;
     min-height:110vh;
-    background-image: url('./Images/T-bg.webp');
+    background-image: url('./images/T-bg.webp');
     background-size: cover;
 }
 
