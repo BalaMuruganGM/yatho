@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .scrolling {
+      width: 90%;
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .scrolling h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .scrollContainer {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .scrollImg {
+      display: flex;
+      gap: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .scrollImg img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 10px;
+    }
+
+    .scrollIcon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .scrollIcon i {
+      font-size: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="scrolling">
+    <h1>Find your Car</h1>
+
+    <div class="scrollContainer">
+      <div class="scrollImg" id="scrollImg">
+        <img src="./images/h1.webp" alt="Car 1">
+        <img src="./images/h2.webp" alt="Car 2">
+        <img src="./images/h3.webp" alt="Car 3">
+        <img src="./images/h4.webp" alt="Car 4">
+      </div>
+    </div>
+
+    <div class="scrollIcon">
+      <i class="fa-solid fa-chevron-left" onclick="scrollLeft()"></i>
+      <i class="fa-solid fa-chevron-right" onclick="scrollRight()"></i>
+    </div>
+  </div>
+
+  <script>
+    function scrollLeft() {
+      const scrollImg = document.getElementById('scrollImg');
+      scrollImg.scrollBy({ left: -420, behavior: 'smooth' });
+    }
+
+    function scrollRight() {
+      const scrollImg = document.getElementById('scrollImg');
+      scrollImg.scrollBy({ left: 420, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

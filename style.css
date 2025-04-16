@@ -1,0 +1,1065 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;      
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to right, #141652, #305297); */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.subContainer{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*------------ Other source Content Start ---------------*/
+
+.home{
+    width: 100%;
+    min-height:110vh;
+    background-image: url('./Images/T-bg.webp');
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.navFirst{
+    display: flex;
+    justify-content: space-between;
+    width:98%;
+    color: #fff;
+    border-bottom: 2px solid gray;
+    padding:8px 30px 10px  30px;
+}
+
+.firstLeft , .firstRight{
+    display: flex;
+    gap: 35px;
+}
+
+.mailTag , .phoneTag , .currency , .language{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.currency , .language{
+    gap: 5px;
+}
+
+.currency select , .language select{
+    background-color: transparent;
+    border: unset;
+    color: white;
+}
+
+.login{
+    width: 130px;
+    height:35px;
+}
+
+.login a{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    border: unset;
+    border-radius: 1px;
+    font-weight: 800;
+    font-size:18px;
+    font-weight: 300;
+}
+
+.navFirst i{
+    font-size: 20px;
+}
+
+
+.login a i{
+    font-size: 16px;
+}
+
+/* second row is start */
+
+.navSecond{
+    display: flex;
+    width:98%;
+    justify-content: space-between;
+    padding:5px 30px;
+
+}
+
+.navSecond a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.secondRight , .secondLeft{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    /* width: 70%; */
+}
+
+.navButton{
+    display: flex;
+    /* width: 80%; */
+    gap:30px;
+}
+
+.reload{
+    width:50px;
+    height:40px;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reload a{
+    color: black;
+    font-size: 20px;
+}
+
+.secondLeft button{
+    width: 100px;
+    height:50px;
+    border: unset;
+    border-radius: 5px;
+    font-size:18px;
+    font-weight: 700;
+    background-color: blue;
+    color: #fff;
+}
+
+.resNav{
+    position: relative;
+    display: none;
+}
+
+
+
+/* Responsive nav Start */
+
+    @media screen and (max-width:1150px) {
+        .secondRight img{
+            width: 120px;
+            height: 60px;
+        }
+
+    @media screen and (max-width:1000px) {
+        nav{
+            display: none;
+        }
+
+        .resNav{
+            display: flex;
+            padding: 10px 20px;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        .ResNavBar{
+            font-size: 25px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .mainlogo{
+            width: 200px;
+        }
+
+        .parsDiv{
+            position: absolute;
+            top:59px;
+            left:0px;
+            width: 40%;
+            background-color:#fff;
+            height: 50vh;
+            left: -100%;
+            transition: all 0.30s;
+        }
+
+        .parsDiv i{
+            cursor: pointer;
+        }
+        .parsDiv img{
+            width:100px;
+        }
+
+        .parsHead{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .parContent{
+            display: flex;
+            height: 80%;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left:10px;
+        }
+
+        .parContent a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            color:#ff6f00;
+        }
+
+    }
+
+
+    @media screen and (max-width:500px){
+        .mainlogo{
+            width: 150px;
+        }
+
+        .parsDiv{
+            width: 60%;
+        }
+    }
+}
+
+/* Responsive nav Clouses */
+
+
+/* nav Style Clouses */
+
+.HoemHead{
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.HoemHead h3{
+    font-size:25px;
+    font-weight: 400;
+}
+
+.HoemHead h1{
+    font-size:4rem;
+}
+
+
+.homeImg{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.homeImg img{
+    width: 95%;
+}
+
+.Explore{
+    width: 100%;
+    padding: 5% 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.exHead{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    
+}
+
+.exHead h1{
+    font-size: 2.5rem;
+}
+
+.exHead button{
+    width: 100px;
+    height:50px;
+    border: unset;
+    border-radius: 5px;
+    font-size:18px;
+    font-weight: 700;
+    background-color: blue;
+    color: #fff;
+}
+
+.exImgTag{
+    display: flex;
+    gap: 5px;
+}
+
+.exImg-1{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.exImg-1 img{
+    width:180px;
+    height:90px;
+}
+
+.exImghead-1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/* Listing Page Start */
+
+    .listing{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+     
+    }
+
+    .listingTag{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .listbut{
+        display: flex;
+        gap: 10px;
+    }
+
+    .listbut button{
+        width: 100px;
+        height:50px;
+        border: unset;
+        border-radius: 5px;
+        font-size:18px;
+        font-weight: 700;
+        background-color: blue;
+        color: #fff;
+    }
+
+    .listbut .listbut2{
+        width: 120px;
+        background-color: #fff;
+        color: black;
+        border: 1px solid blue;
+    }
+
+
+    .listingImg{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px 1%;
+        justify-content: center;
+        gap: 30px;
+        row-gap: 20%;
+    }
+
+    .lImgBox{
+        display: flex;
+        gap: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .lImgLeft{
+        width: 320px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        /* background-color: yellow; */
+
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+
+    }
+
+    .lImgScroll{
+        width:420%;
+        height: 100%;
+        position:absolute;
+        top: 0;
+        left:0px;
+        display: flex;
+        /* gap: 5%; */
+    }
+
+    .lImgScroll img{
+        width:25%;
+        height: 100%;
+    }
+
+    .lImgOne-icon{
+        position: absolute;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        top: 40%;
+        color:red;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .lImgOne-icon i{
+        padding: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .lImgRight{
+        width: 320px;
+        height: 200px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .LrightHead{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: gray;
+    }
+
+    .LrightHead h1{
+        color: #405FF2;
+        font-size: 26px;
+    }
+
+    .LrightModel{
+        transition: all 0.30s;
+    }
+    .LrightModel h3{
+        font-size: 18px;
+    }
+
+    .lImgRight:hover .LrightModel{
+        color: #405FF2;
+    }
+
+    .LrightSpeed{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top:5px;
+        color: gray;
+    }
+
+    .LrightSpeed-speedIcon , .LrightSpeed-GasolineIcon , .LrightSpeed-pibeIcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .LrightName{
+        margin-top: 20px;
+    }
+
+    .LrightName span{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+   
+
+
+/* Main Responsis Start */
+
+
+    @media screen and (max-width:1350px) {
+        .listingImg{
+            grid-template-columns: auto;
+            gap: 50px;
+        }
+    }
+
+
+    @media screen and (max-width:1200px) {
+        .exImgTag{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            width:95%;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .HoemHead h1{
+            font-size:3rem;
+        }
+
+        .HoemHead{
+            margin-top: 10px;
+        }
+
+        .home{
+            min-height:90vh;
+        }
+
+    }
+
+
+    @media screen and (max-width:850px) {
+        .exImgTag{
+            grid-template-columns: auto auto auto;
+        }   
+
+        .exHead h1{
+            font-size: 30px;
+        }
+    }
+
+
+    @media screen and (max-width:700px){
+
+        .HoemHead{
+            line-height: 50px;
+        }
+
+        .HoemHead h1{
+            font-size:2rem;
+        }
+
+        .HoemHead h3{
+            font-size:18px;
+        }
+
+        .HoemHead{
+            margin-top: 10px;
+        }
+
+        .home{
+            min-height:80vh;
+        }
+        
+    }
+
+
+    @media screen and (max-width:650px) {
+        .exImgTag{
+            grid-template-columns: auto auto;
+        }   
+
+        .exHead{
+            align-items: center;
+        }
+
+        .exHead h1{
+            font-size:25px;
+        }
+
+        .exHead button{
+            width:80px;
+            height:35px;
+            border-radius: 5px;
+            font-size:14px;
+            font-weight: 500;
+        }
+
+
+        .listingTag h1{
+            font-size: 25px;
+        }
+
+        .listbut button{
+            width:80px;
+            height:40px;
+            border-radius: 3px;
+            font-size:14px;
+        }
+    
+        .listbut .listbut2{
+            width: 90px;
+        }
+
+        .lImgBox{
+            flex-direction: column;
+        }
+
+        .lImgLeft{
+            border-radius: 0px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+    }
+
+    
+
+    @media screen and (max-width:400px){
+        
+        .exImgTag{
+            grid-template-columns:auto;
+        } 
+
+        .exHead h1{
+            font-size:18px;
+        }
+
+        .lImgLeft , .lImgRight{
+            width: 300px;
+        }
+    }
+
+
+
+    @media screen and (max-width:500px){
+        .home{
+            min-height:50vh;
+        }
+
+        .HoemHead{
+            line-height: 40px;
+        }
+
+        .HoemHead h1{
+            font-size:1.5rem;
+        }
+
+        .HoemHead h3{
+            font-size:15px;
+        }
+
+    }
+
+    @media screen and (max-width:400px){
+        .home{
+            height:45vh;
+        }
+    }
+
+/* Main Response Closes */
+
+/* Listing Page clouse */
+
+
+/*------------------ Other source Content Closes ----------------*/
+
+.aboutOne , .aboutTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.aboutOne h1 , .aboutTwo{
+    color:#ff6f00;
+}
+
+.aboutOne h1{
+    margin-top: 100px;
+}
+
+.aboutOneImg , .aboutTwoImg{
+    display: flex;
+    gap:5px;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutOneImgBox , .aboutTwoImgBox{
+    height: 100%;
+    width: 25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.aboutOneImgBox img , .aboutTwoImgBox img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.30s;
+}
+
+.aboutOneImgBox img:hover{
+    transform: scale(1.1);
+}
+
+.aboutTwoImgBox img:hover{
+    transform: scale(1.1);
+}
+
+.other{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+}
+
+.other h1{
+    margin-top: 20px;
+    color:#ff6f00;
+}
+
+.otherImg1 , .otherImg2{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    height:200px;
+    align-items: center;
+}
+
+.otherImg1box , .otherImg2box{
+    width: 19%;
+    height:80%;
+}
+
+.otherImg1box img , .otherImg2box img{
+    height: 100%;
+    width: 100%;
+}
+
+/* feature is start */
+
+.feaaturHeadLine{
+    color: #ff6f00;
+    margin: 20px 0px;
+}
+
+    .feature{
+        display: flex;
+        width:95%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+    .featureTag{
+        width:300px;
+        /* height:250px; */
+        background-color:white;
+        padding-bottom:10px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid lightgray;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .featureTag img{
+        width:100%;
+        height:170px;
+    }
+
+    .featureHeadOne-tag , .featureHeadtwo-tag{
+        display: flex;
+        justify-content: space-between;
+        padding:2px 10px;
+    }
+
+    .featureHeadtwo-tag{
+        justify-content: start;
+        gap: 15px;
+    }
+
+/* feature is clouse */
+
+
+/* footer is start */
+
+    footer{
+        width: 100%;
+        background-color: #333333;
+        min-height: 400px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 5%;
+        margin-top: 40px;
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top: 8%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+    }
+
+    .footerLogos{
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 10px;
+    }
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap: 5%;
+        }
+    }
+
+/* footer Responsive clouses */
+
+
+/* Main Responsive  start*/
+
+    @media screen and (max-width:1350px) {
+        .aboutOne h1{
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (max-width:1100px) {
+
+        .feature{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        
+    }
+
+    @media screen and (max-width:1000px) {
+        .feature{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+    }
+
+
+    @media screen and (max-width:900px){
+        .aboutOne h1 , .aboutTwo h1, .other h1 , .feaaturHeadLine h1{
+            font-size: 30px;
+        }
+
+    }
+
+    @media screen and (max-width:800px) {
+
+        .aboutOneImgBox , .aboutTwoImgBox{
+            width: 300px;
+        }
+
+        .aboutOneImg , .aboutTwoImg{
+            display: grid;
+            width: 100%;
+            grid-template-columns:auto auto;
+            height: auto;
+            overflow: unset;
+        }
+
+        .aboutOne{
+            overflow:unset;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+        
+    }
+
+
+
+    @media screen and (max-width:700px) {
+        .aboutOne h1 , .aboutTwo h1 , .other h1 , .feaaturHeadLine h1{
+            font-size: 25px;
+        }
+
+        .home{
+            height:unset;
+            background-color: #fff;
+        }
+
+        .homeContent h1{
+            font-size: 2rem;
+        }
+
+        .homeContent button{
+            width: 120px;
+            font-size: 12px;
+        }
+
+    }
+
+
+    @media screen and (max-width:650px) {
+        .feature{
+            grid-template-columns: auto;
+        }
+
+        .aboutOneImg , .aboutTwoImg{
+            grid-template-columns: auto;
+        }
+    }
+
+
+    @media screen and (max-width:600px) {
+
+        .otherImg1 img, .otherImg2 img{
+            width: 300px;
+            height: 250px;
+        }
+
+        .otherImg1 , .otherImg2{
+            display: grid;
+            height: auto;
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+    }
+
+
+    @media screen and (max-width:500px) {
+        .homeContent h1{
+            font-size: 1.5rem;
+        }
+
+        .homeContent button{
+            font-size: 10px;
+            width: 100px;
+        }
+    }
+
+
+    @media screen and (max-width:400px) {
+        .homeContent button{
+            font-size: 8px;
+            width: 80px;
+        }
+    }
+
+/* Main resoinsive clouses */
+
+/* Responsive clouses */
